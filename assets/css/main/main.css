@@ -1,0 +1,106 @@
+*{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	position: relative;
+	height: 1920px;
+	margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	/*background-color:red;*/
+	overflow:hidden;
+}
+
+@media screen and (max-width: 1919px) {
+	body {
+		overflow-y: auto;
+	}
+}
+
+#content {
+	position: relative;
+	width: 1160px;
+	margin: 20px auto;
+}
+
+/* This is the "How can we help you?" title */
+
+#content h1 {
+	font-size: 60px;
+	color: #e02826;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#loader {
+	position: absolute;
+	top: calc(50% - 60px);
+	left: calc(50% - 90px);
+
+	height: 120px;
+	width: 240px;
+}
+
+.headBox {
+	width:400px;
+	padding:0px 20px 0px 20px;
+	background-color:white;
+	border-style:solid;
+	border-width:10px;
+	border-color:#D1D2D4;
+	margin:0 auto;
+	margin-top:40px;
+	margin-bottom:;
+}
+
+.headBox h1 {
+	font-family:helvetica;
+	font-weight:900;
+	font-size: 40px !important; 
+	color: #e02826;
+	text-align: center;
+}
+
+.headBox1 {
+	width:500px;
+	padding:0px 20px 0px 20px;
+	background-color:white;
+	border-style:solid;
+	border-width:10px;
+	border-color:#D1D2D4;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+.headBox1 h1 {
+		font-family:helvetica;
+		font-weight:900;
+		font-size: 40px !important; 
+		color: #198A3E;
+		text-align: center;
+		
+}
+
+.headBox2 {
+	width:500px;
+	padding:0px 20px 0px 20px;
+	background-color:white;
+	border-style:solid;
+	border-width:10px;
+	border-color:#D1D2D4;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+.headBox2 h1 {
+		font-family:helvetica;
+		font-weight:900;
+		font-size: 30px !important; 
+		color: #198A3E;
+		text-align: center;
+}

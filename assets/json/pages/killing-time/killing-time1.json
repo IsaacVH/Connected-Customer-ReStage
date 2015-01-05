@@ -1,0 +1,33 @@
+{ 
+	"1" : {
+		"type"	:"image-top",
+		"title"	:"GAMES", 
+		"body"	:"Gamify your life and learn finan- cial tips and skills to help you in your everyday life.", 
+		"image"	:"../assets/gamesIcon-o.png",
+		"link"	:"game-page.php"
+	}, 
+
+	"2" : {
+		"type"	:"image-top",
+		"title"	:"A GOOD LAUGH", 
+		"body"	:"Applying for a loan is easy, find out what kinds of loans you can get.", 
+		"image"	:"../assets/pigLaugh-o.png",
+		"link"	:"jokes.php"
+	}, 
+
+	"3" : {
+		"type"	:"image-top",
+		"title"	:"INTERESTING FACT", 
+		"body"	:"Click to generate random funny and interesting facts.", 
+		"image"	:"../assets/interestingFacts-o.png",
+		"link"	:"interesting-facts.php"
+	},
+
+	"4" : {
+		"type"	:"image-top",
+		"title"	:"LOCAL ATTRACTIONS", 
+		"body"	:"See what the area has to offer new, old and unknown.", 
+		"image"	:"../assets/pigDoor-o.png",
+		"link"	:"local-attractions.php"
+	}
+}
