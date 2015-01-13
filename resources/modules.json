@@ -1,0 +1,8 @@
+{
+	"block_menu" : {
+		"render"	 : "block_menu.php",
+		"css"			 : ["carousel.css", "block_menu.css"],
+		"js"			 : ["libs/iscroll.js", "carousel.js"]
+	}
+}
+

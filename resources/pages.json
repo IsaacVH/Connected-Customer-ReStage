@@ -1,0 +1,19 @@
+{
+	"splash": {
+		"title" 	 : "Connected Customer App",
+		"template" : "splashscreen",
+		"file"		 : "splash.php",
+		"css"			 : ["splash.css"],
+		"js"			 : [],
+		"modules"	 : []
+	},
+
+	"main" : {
+		"title" 	 : "Home",
+		"template" : "default",
+		"file" 		 : "hometmpl.php",
+		"css" 		 : ["hometmpl.css"],
+		"js" 			 : ["hometmpl.js"],
+		"modules"	 : ["block_menu"]
+	}
+}

@@ -1,0 +1,14 @@
+#content {
+	position: relative;
+	width: 1160px;
+	max-height: 1160px;
+	margin: 20px auto;
+}
+
+/* This is the "How can we help you?" title */
+#content h1 {
+	font-size: 60px;
+	color: #e02826;
+	text-align: center;
+	margin-bottom: 40px;
+}

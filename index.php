@@ -1,15 +1,16 @@
-<html>
-	<head>
-		<?php require("/src/php-includes/imports.php"); ?>
-	</head>
-	<body>
-		<?php require("/src/php-modules/header.php"); ?>
+<?php 
+	// load the config file.
+	require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/config.php");
+	require_once(LIBRARY_PATH . "/php/templateFunctions.php");
 
-		<div id="content">
-			<canvas id="loader" data-startpoint="0"></canvas>
-			<?php require("/src/php-modules/carousel-pages/main-pages.php"); ?>
-		</div>
+	$page = json_decode(file_get_contents($config["paths"]["pages"]), true)["main"];
 
-		<?php require("/src/php-modules/footer.php"); ?>
-	</body>
-</html>
+	$setInIndexDotPhp = "Hey! I was set in the index.php file.";
+
+	// Must pass in variables (as an array) to use in template
+	$variables = array(
+		'setInIndexDotPhp' => $setInIndexDotPhp
+	);
+
+	renderLayoutWithContentFile($page, $variables);
+?>
