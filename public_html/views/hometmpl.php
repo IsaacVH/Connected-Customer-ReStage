@@ -5,6 +5,7 @@
 
 	// Homepage content
 	echo "<h1>Home Page</h1>";
+	echo "<h2>$setInIndexDotPhp</h2>";
 	block_menu($_SERVER["DOCUMENT_ROOT"]."/public_html/json/menu-files/main-menu.json", 6);
 ?>
 

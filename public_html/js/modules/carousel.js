@@ -10,7 +10,7 @@ function loaded() {
 		}
 	});
 
-	var pages = document.getElementsByClassName('container');
+	var pages = document.getElementsByClassName('page');
 	for(var i = 1; i < pages.length+1; i++){
 		var navitem = document.createElement("li");
 		navitem.innerHTML = i.toString();

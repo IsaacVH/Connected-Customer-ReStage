@@ -2,7 +2,7 @@
 
 	function block_menu($menuFile, $blocks_per_page) {
 		$menuitems = json_decode(file_get_contents($menuFile), true);
-
+		$pages = ceil(count($menuitems)/$blocks_per_page);
 		?>
 
 		<div class="carousel">
@@ -11,18 +11,20 @@
 					<ul id="indicator"></ul>
 				</div>
 				<div id="wrapper">
-					<div id="scroller" style="<?php echo 'width: '.((count($menuitems)/$blocks_per_page)*100).'%';?>">
+					<div id="scroller" style="<?php echo 'width: '.($pages*100).'%;';?>">
 						<div class="container-list">
 							<?php for ($i = 0; $i < count($menuitems); $i++){ ?>
-								<div class="page" name="page<?php echo ($i/$blocks_per_page); ?>">
+								<div class="page" name="page<?php echo floor($i/$blocks_per_page); ?>" style="width: <?php echo (100/$pages).'%';?>">
 									<ul class="content-list">
 										<?php	
 											$j = $i;
 											while($j < count($menuitems) && $j < ($i + $blocks_per_page)){ 
-											$ival = $menuitems[$j];
-										?>
+												$ival = $menuitems[$j];
+												?>
+
 												<li class="<?php echo $ival['type']; ?>">
-													<div class="<?php echo 'li-container well';?>" href="<?php echo $ival['link']; ?>"> <!--onclick="sendClick(this)"-->
+													<div class="<?php echo 'li-container well';?>" href="<?php echo $ival['link']; ?>"> 
+														<!--onclick="sendClick(this)"-->
 													 	<div class="absolute-container">
 													 		<div class="image-container">
 																<img class="option-image" src="<?php echo $ival['image']; ?>" />
@@ -36,10 +38,11 @@
 														</div>
 													</div>
 												</li>
-										<?php 
+
+												<?php 
 												$j++;
 											} 
-											$i = $j;
+											$i = $j-1;
 										?>
 									</ul>
 								</div> <!-- /page -->
@@ -48,6 +51,7 @@
 					</div> <!-- /scroller -->
 				</div> <!-- /wrapper -->
 			</div> <!-- /background -->
-		</div> <!-- /carousel --> <?php
+		</div> <!-- /carousel --> 
+<?php
 	}
 ?>

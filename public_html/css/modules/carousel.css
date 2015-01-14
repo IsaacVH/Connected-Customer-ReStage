@@ -57,50 +57,48 @@
 	right: 8px;
 }
 /* END Content List */
-.background {
-	width:1000px;
-	height:1000px;
-	margin:0 auto;
-	display:block;
-	background-image: url('../assets/svg/background.svg');
-	background-size:1000px 1000px;
 
+.background {
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	display: block;
+	background-image: url('/public_html/img/global/svg/background.svg');
+	background-size: 1000px 1000px;
 }
 
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	overflow: hidden;
-
 }
 
 #scroller {
-	height:100%;
-	float:left;
-	padding:0;
+	height: 100%;
+	float: left;
+	padding: 0;
 	
 }
 
 #scroller > .container-list {
-	list-style:none;
-	display:block;
-	float:left;
-	width:100%;
-	height:100%;
-	padding:0;
-	margin:0;
-	text-align:left;
+	list-style: none;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
 }
 
 #scroller > .container-list > .page {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
 	display: block; 
 	float: left;
-	width: 50%; 
 	height: 30%;
 	min-height: 300px;
 }
@@ -109,7 +107,9 @@
 	width: 100%;
 	height: 40px;
 	/*float:left;*/
+	margin-top: 60px;
 	display: block;
+	text-align: center;
 }
 
 #prev, #next {
@@ -125,24 +125,22 @@
 	text-align: right;
 }
 
-#indicator, #indicator > li {
-	display: block; 
-	float: left;
-	list-style: none;
-	padding: 0; 
-	margin: 0;
-}
-
 #indicator {
-	width: 140px;
-	padding: 30px 0 0 30px;
-	margin-left:47%;
-	margin-top:-55px;
-	display: block;
-	
+	margin: 0 auto;
+	display: inline-block;
+	height: 12px;
+	padding: 0;
+	position: relative;
+	top: -25px;
 }
 
 #indicator > li {
+	display: block; 
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0 6px;
+
 	text-indent: -9999em;
 	width: 12px; 
 	height: 12px;
@@ -154,7 +152,6 @@
 
 	background: #bbb;
 	overflow: hidden;
-	margin-right: 16px;
 }
 
 #indicator > li.active {
@@ -162,5 +159,5 @@
 }
 
 #indicator > li:last-child {
-	margin:0;
+	/*margin:0;*/
 }
