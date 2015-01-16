@@ -1,1 +1,1 @@
-.\src\PHP_5.5\php.exe -S localhost:8000 routing.php
+.\src\PHP_5.5\php.exe -S localhost:8000

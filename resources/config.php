@@ -53,8 +53,11 @@ defined("LIBRARY_PATH")
 defined("TEMPLATES_PATH")
     or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
 
+defined("MODULES_PATH")
+    or define("MODULES_PATH", realpath(dirname(__FILE__) . '/modules'));
+
 defined("PUBLIC_PATH")
-    or define("PUBLIC_PATH", $_SERVER["DOCUMENT_ROOT"] . '/public_html/');
+    or define("PUBLIC_PATH", $_SERVER["DOCUMENT_ROOT"] . '/public_html');
  
 /*
     Error reporting.

@@ -1,19 +1,52 @@
 {
 	"splash": {
+		"template" : "",
 		"title" 	 : "Connected Customer App",
-		"template" : "splashscreen",
 		"file"		 : "splash.php",
 		"css"			 : ["splash.css"],
 		"js"			 : [],
-		"modules"	 : []
+		"header"	 : "",
+		"modules"	 : {},
+		"footer"	 : ""
 	},
 
 	"main" : {
-		"title" 	 : "Home",
 		"template" : "default",
-		"file" 		 : "hometmpl.php",
-		"css" 		 : ["hometmpl.css"],
-		"js" 			 : ["hometmpl.js"],
-		"modules"	 : ["block_menu"]
+		"title" 	 : "Home",
+		"file" 		 : "home.php",
+		"css" 		 : ["home.css"],
+		"js" 			 : ["home.js"],
+		"header"	 : "header",
+		"modules"	 : {
+			"title_box" : {
+				"title" : "Home"
+			},
+
+			"block_menu" : { 
+				"menu-file": "public_html/json/menu-files/main-menu.json",
+				"blocks-per-page" : 6
+			}
+		},
+		"footer"	 : "footer-ads"
+	},
+
+	"creating-a-portfolio" : {
+		"template" : "default",
+		"title"		 : "Creating a Portfolio & Beating the Market",
+		"file"		 : "creating-a-portfolio.php",
+		"css"			 : ["creating-a-portfolio.css"],
+		"js"			 : [],
+		"header"	 : "header",
+		"modules"	 : {
+			"title_box" : {
+				"title" : "Creating a Portfolio & Beating the Market"
+			},
+
+			"block_menu" : {
+				"menu-file"	: "public_html/json/menu-files/creating-a-portfolio-menu.json",
+				"blocks-per-page" : 1
+			}
+		},
+		"footer"	 : "footer"
 	}
 }

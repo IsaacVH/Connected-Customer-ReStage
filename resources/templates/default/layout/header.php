@@ -1,7 +1,3 @@
-<?php
-	$template = json_decode(file_get_contents($_SERVER["DOCUMENT_ROOT"]."/resources/templates/".$pagesetup["template"]."/data.json"), true)
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -17,6 +13,7 @@
 		?>
 
 		<script src="/resources/library/js/jquery-1.11.1.js"></script>
+		<script src="/resources/library/js/google-analytics.js"></script>
 		<?php
 			// The JS block.
 			foreach ($template['js'] as $tmpljs){ echo "<script src='/resources/templates/".$pagesetup['template']."/js/".$tmpljs."'></script>"; }

@@ -3,7 +3,8 @@
 		"header.css",
 		"main.css",
 		"slider.css",
-		"footer.css"
+		"footer.css",
+		"footer-ads.css"
 	],
 
 	"js" : [

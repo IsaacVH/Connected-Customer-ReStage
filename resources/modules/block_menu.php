@@ -1,6 +1,10 @@
-<?php
+<?php 
+	// This page type is display a block menu with modular carousel pages.
+	
+	$moduleFunctions["block_menu"] = function($args = array()) {
+		$menuFile = $args["menu-file"];
+		$blocks_per_page = $args["blocks-per-page"];
 
-	function block_menu($menuFile, $blocks_per_page) {
 		$menuitems = json_decode(file_get_contents($menuFile), true);
 		$pages = ceil(count($menuitems)/$blocks_per_page);
 		?>
@@ -23,8 +27,7 @@
 												?>
 
 												<li class="<?php echo $ival['type']; ?>">
-													<div class="<?php echo 'li-container well';?>" href="<?php echo $ival['link']; ?>"> 
-														<!--onclick="sendClick(this)"-->
+													<div class="<?php echo 'li-container well';?>" href="<?php echo $ival['link']; ?>" onclick="sendClick(this)">
 													 	<div class="absolute-container">
 													 		<div class="image-container">
 																<img class="option-image" src="<?php echo $ival['image']; ?>" />
@@ -51,7 +54,7 @@
 					</div> <!-- /scroller -->
 				</div> <!-- /wrapper -->
 			</div> <!-- /background -->
-		</div> <!-- /carousel --> 
+		</div> <!-- /carousel -->
 <?php
 	}
 ?>
