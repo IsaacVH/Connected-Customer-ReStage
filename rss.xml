@@ -5,10 +5,10 @@
 		<link>http://connected-customer-sr.herokuapp.com/</link>
 		<description>History of button clicks</description>
 		<item>
- 			<title>MANAGING YOUR PORTFOLIO</title>
-			<link>http://localhost:8000/?page=creating-a-portfolio</link>
-			<description>2015-01-16 16:15:34</description>
-			<guid>53518</guid>
+ 			<title>TALK TO A BANKER</title>
+			<link>http://localhost:8000/index.php</link>
+			<description>2015-01-19 09:57:15</description>
+			<guid>20477</guid>
 			<category></category>
 			<pubDate></pubDate>
 		</item>

@@ -27,11 +27,8 @@ $config = array(
         "baseUrl" => "http://connected-customer-stage.herokuapp.com"
     ),
     "paths" => array(
-        "resources" => $_SERVER["DOCUMENT_ROOT"] . "/../resources",
-        "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/img/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/img/layout"
-        ),
+        "resources" => $_SERVER["DOCUMENT_ROOT"] . "/resources",
+        "images" => $_SERVER["DOCUMENT_ROOT"] . "/public/img",
         "pages" => $_SERVER["DOCUMENT_ROOT"] . "/resources/pages.json",
         "modules" => $_SERVER["DOCUMENT_ROOT"] . "/resources/modules.json"
     )

@@ -11,13 +11,15 @@ function loaded() {
 	});
 
 	var pages = document.getElementsByClassName('page');
-	for(var i = 1; i < pages.length+1; i++){
-		var navitem = document.createElement("li");
-		navitem.innerHTML = i.toString();
-		if(i == 1){
-			navitem.className = "active";
+	if(pages.length > 1){
+		for(var i = 1; i < pages.length+1; i++){
+			var navitem = document.createElement("li");
+			navitem.innerHTML = i.toString();
+			if(i == 1){
+				navitem.className = "active";
+			}
+			document.getElementById('indicator').appendChild(navitem);
 		}
-		document.getElementById('indicator').appendChild(navitem);
 	}
 }
 document.addEventListener('DOMContentLoaded', loaded, false);

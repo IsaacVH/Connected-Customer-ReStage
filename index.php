@@ -20,9 +20,7 @@
 	//$setInIndexDotPhp = "Hey! I was set in the index.php file.";
 
 	// Must pass in variables (as an array) to use in template
-	$variables = array(
-		'setInIndexDotPhp' => $setInIndexDotPhp
-	);
+	$variables = array('setInIndexDotPhp' => $setInIndexDotPhp);
 
 	renderLayoutWithContentFile($pages[$pagetitle], $variables);
 ?>

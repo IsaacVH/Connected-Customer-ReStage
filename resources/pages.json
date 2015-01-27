@@ -1,52 +1,90 @@
 {
 	"splash": {
-		"template" : "",
 		"title" 	 : "Connected Customer App",
-		"file"		 : "splash.php",
-		"css"			 : ["splash.css"],
+		"css"			 : ["/public/css/modules/splash.css"],
 		"js"			 : [],
 		"header"	 : "",
-		"modules"	 : {},
+		"modules"	 : {
+			"splash-image" : {
+				"image": "/public/img/modules/splash1-o.png"
+			},
 		"footer"	 : ""
 	},
 
-	"main" : {
-		"template" : "default",
+	"home" : {
 		"title" 	 : "Home",
-		"file" 		 : "home.php",
-		"css" 		 : ["home.css"],
-		"js" 			 : ["home.js"],
-		"header"	 : "header",
+		"css" 		 : [],
+		"js" 			 : [],
+		"header"	 : "clock-header",
 		"modules"	 : {
 			"title_box" : {
 				"title" : "Home"
 			},
 
-			"block_menu" : { 
-				"menu-file": "public_html/json/menu-files/main-menu.json",
+			"block_menu" : {
+				"menu-file": "/public/json/home-menu.json",
 				"blocks-per-page" : 6
 			}
 		},
 		"footer"	 : "footer-ads"
 	},
 
+	"teaching-children" : {
+		"title"		 : "Teaching Children How to Save",
+		"css"			 : [],
+		"js"			 : [],
+		"header"	 : "clock-header",
+		"modules"	 : {
+			"title_box" : {
+				"title" : "Teaching Children How to Save"
+			},
+
+			"block_menu" : {
+				"menu-file" : "/public/json/teaching-children.json",
+				"blocks-per-page" : 4
+			}
+		},
+		"footer"	 : "footer-simple"
+	},
+
+	"talk-to-a-banker" : {
+		"template" : "default",
+		"title"		 : "Talk to a Banker",
+		"file"		 : "",
+		"css"			 : ["talk-to-a-banker.css"],
+		"js"			 : [],
+		"header"	 : "clock-header",
+		"modules"	 : {
+			"title_box" : {
+				"title" : "Talk to a Banker"
+			},
+
+			"block_menu" : {
+				"menu-file" : "/public/json/talk-to-a-banker.json",
+				"blocks-per-page" : 6
+			}
+		},
+		"footer"	 : "footer-simple"
+	},
+
 	"creating-a-portfolio" : {
 		"template" : "default",
 		"title"		 : "Creating a Portfolio & Beating the Market",
 		"file"		 : "creating-a-portfolio.php",
-		"css"			 : ["creating-a-portfolio.css"],
+		"css"			 : ["/public/css/creating-a-portfolio.css"],
 		"js"			 : [],
-		"header"	 : "header",
+		"header"	 : "clock-header",
 		"modules"	 : {
 			"title_box" : {
 				"title" : "Creating a Portfolio & Beating the Market"
 			},
 
 			"block_menu" : {
-				"menu-file"	: "public_html/json/menu-files/creating-a-portfolio-menu.json",
+				"menu-file"	: "/public/json/creating-a-portfolio.json",
 				"blocks-per-page" : 1
 			}
 		},
 		"footer"	 : "footer"
 	}
+
 }

@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	height: 100%;
 
-	background-color: lightgray;
+	background-color: #ddd;
 }
 
 header {
@@ -30,15 +30,20 @@ footer {
 	padding: 5px 0;
 }
 
+.line-break {
+	height: 1px;
+	background-color: gray;
+}
+
 nav {
 	position: absolute;
 	left: 0;
-	width: 200px;
+	width: 230px;
 	height: 100%;
 
 	z-index: 0;
 
-	background-color: lightgray;
+	background-color: #ddd;
 }
 
 nav .nav-list {
@@ -47,18 +52,18 @@ nav .nav-list {
 }
 
 nav .nav-list li {
-	padding: 10px 5px;
+	padding: 10px 10px;
 	font-size: 22px;
 }
 
 nav .nav-list li:hover {
-	background-color: darkgray;
+	background-color: lightgray;
 	cursor: pointer;
 }
 
 nav li a {
 	text-decoration: none;
-	color: gray;
+	color: #666;
 }
 
 nav hr {
@@ -67,11 +72,12 @@ nav hr {
 
 content {
 	position: absolute;
-	left: 220px;
+	top: 1%;
+	right: 0.5%;
 
-	width: 500px;
+	width: 1000px;
+	height: 98%;
 
-	height: calc(100% - 158px);
 	background-color: white;
 	box-shadow: -1px 2px 8px black;
 	z-index: 1;

@@ -1,9 +1,19 @@
 <?php
+	$folderscan = scandir($_SERVER["DOCUMENT_ROOT"] . "/resources/templates");
+	
+	$directories = array();
+	foreach($folderscan as $fscan) {
+		if(is_dir($_SERVER["DOCUMENT_ROOT"]."/resources/templates/".$fscan) && $fscan != "." && $fscan != ".."){
+			$directories[$fscan] = scandir($_SERVER["DOCUMENT_ROOT"] . "/resources/templates/" . $fscan);
+		}
+	}
 
-	$navitems = [
-		["url" => "add-page.php?page=first", "title" => "First"],
-		["url" => "add-page.php?page=second", "title" => "Second"]
-	];
+	function normal_dir($path) {
+		if(is_dir($_SERVER["DOCUMENT_ROOT"].$path) && 
+				substr($path, -2) != "/." && substr($path, -3) != "/.."){
+			return true;
+		}
+	}
 
 ?>
 
@@ -13,6 +23,7 @@
 		<meta charset="utf-8">
 		<title>Add a New Page</title>
 		<link rel="stylesheet" href="/public_html/css/utilities/add-page.css">
+		<script src="/resources/library/js/jquery-1.11.1.js"></script>
 		<script src="/public_html/js/utilites/add-page.js"></script>
 	</head>
 	<body>
@@ -21,14 +32,25 @@
 			<h2>Create a New Page</h2>
 		</header>
 		-->
+
 		<nav>
-			<div class="tab" data-title="Pages">
+			<h1>Create a New Page</h1>
+			<div class="tab templates">
 				<ul class='nav-list'>
-					<hr>
-					<?php 
-						foreach($navitems as $navitem) { 
-							echo "<li><a href='".$navitem["url"]."''>".$navitem["title"]."</a></li><hr>"; 
-						} 
+					<div class='line-break'></div>
+					<?php
+						foreach($directories as $dirname => $dir) {
+							if(normal_dir("/resources/templates/" . $dirname)) {
+								echo "<li class='pagelink' data-href='?page=$dirname'>";
+								echo " $dirname<br>";
+								foreach($dir as $subdir) {
+									if(normal_dir("/resources/templates/".$dirname."/".$subdir)){
+										echo " - $subdir<br>";
+									}
+								}
+								echo "</li><div class='line-break'></div>"; 
+							}
+						}
 					?>
 				</ul>
 			</div>

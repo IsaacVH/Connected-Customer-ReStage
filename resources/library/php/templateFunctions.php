@@ -26,7 +26,7 @@
         require_once(MODULES_PATH . "/../modules.php");
 
         // Load template data.
-        $template = json_decode(file_get_contents(TEMPLATES_PATH."/".$pagesetup["template"]."/json/data.json"), true);
+        $template = json_decode(file_get_contents(TEMPLATES_PATH."/".$pagesetup["template"]."/data.json"), true);
 
         // Put up header
         require_once(TEMPLATES_PATH . "/" . $pagesetup["template"] . "/layout/" . $pagesetup["header"] . ".php");
@@ -65,3 +65,5 @@
         require_once(TEMPLATES_PATH . "/" . $pagesetup["template"] . "/layout/" . $pagesetup["footer"] . ".php");
     }
 ?>
+
+
