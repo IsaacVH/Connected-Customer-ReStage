@@ -1,0 +1,97 @@
+[
+	{
+		"type"	:"image-left",
+		"title"	:"TEACHING CHILDREN <br>HOW TO SAVE", 
+		"body"	:"At age 3 children understand concepts like saving & spending, by age 7, money habits are formed.", 
+		"image"	:"/public_html/img/page-content/teaching3-o.png",
+		"link"	:"/?page=teaching-children"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"TALK TO A BANKER", 
+		"body"	:"Applying for a loan is easy, find out what kinds of loans you can get.", 
+		"image"	:"/public_html/img/page-content/pigBusiness-o.png",
+		"link"	:"/?page=error-404"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"SHOPPING", 
+		"body"	:"Discover local brands & flavors around the area. See for yourself why they are popular.", 
+		"image"	:"/public_html/img/page-content/shopping-o.png",
+		"link"	:"/?page=error-404"
+	},
+
+	{
+		"type"	:"image-left",
+		"title"	:"KILLING TIME", 
+		"body"	:"Just waiting on a line? Stay amused with games, local event awarness and fun & interesting facs.", 
+		"image"	:"/public_html/img/page-content/killing-o.png",
+		"link"	:"/?page=killing-time"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"BANKING 101 <br>FOR DUMMIES", 
+		"body"	:"Explore an A to Z list of finance terms. Access useful calculators & learn why banking is important.", 
+		"image"	:"/public_html/img/page-content/howTo-o.png",
+		"link"	:"/?page=banking-101"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"CREDIT CARD <br>ESSENTIALS", 
+		"body"	:"Learn about building up credit, types of existing cards that can help you and so much more.", 
+		"image"	:"/public_html/img/page-content/creditCard-o.png",
+		"link"	:"/?page=error-404"
+	},
+
+	{
+		"type"	:"image-left",
+		"title"	:"LOCAL ATTRACTIONS", 
+		"body"	:"See what the area has to offer new, old and unknown.", 
+		"image"	:"/public_html/img/page-content/local-attractions1-o.png",
+		"link"	:"/?page=local-attractions"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"FINANCIAL TOOLS", 
+		"body"	:"Learn about the tools exist to help you make smart financial decisions.", 
+		"image"	:"/public_html/img/page-content/financial-tools-o.png",
+		"link"	:"/?page=error-404"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"PROMOTIONS", 
+		"body"	:"Find out how you can get free money by setting up any account or savings plans.", 
+		"image"	:"/public_html/img/page-content/promotions-o.png",
+		"link"	:"/?page=error-404"
+	},
+
+	{
+		"type"	:"image-left",
+		"title"	:"POPULAR STORIES", 
+		"body"	:"Stay connected with our live stream of news and current events.", 
+		"image"	:"/public_html/img/page-content/popular-stories-o.png",
+		"link"	:"/?page=error-404"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"HELP FIGHT CANCER", 
+		"body"	:"With every swipe you can help fight cancer.", 
+		"image"	:"/public_html/img/page-content/cancer-o.png",
+		"link"	:"/?page=error-404"
+	}, 
+
+	{
+		"type"	:"image-left",
+		"title"	:"IDENTITY PROTECTION", 
+		"body"	:"Learn how we are continually increasing data security & protecting identities.", 
+		"image"	:"/public_html/img/page-content/identity-protection-o.png",
+		"link"	:"/?page=send-mail"
+	}
+]
