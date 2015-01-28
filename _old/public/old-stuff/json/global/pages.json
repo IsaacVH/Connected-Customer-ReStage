@@ -1,0 +1,41 @@
+{
+	"main": {
+		"type": "carousel",
+		 "src": "/src/php-modules/carousel-pages/main-pages.php"
+	},
+
+	"banking-101": {
+		"type": "carousel",
+		 "src": "/src/php-modules/carousel-pages/banking-101-pages.php"
+	},
+
+	"creating-a-portfolio": {
+		"type": "static",
+		 "src": "/src/php-modules/static-pages/creating-a-portfolio.php"
+	},
+
+	"interesting-facts": {
+		"type": "static",
+		 "src": "/src/php-modules/static-pages/interesting-facts.php"
+	},
+
+	"jokes": {
+		"type": "static",
+		 "src": "/src/php-modules/static-pages/jokes.php"
+	},
+
+	"killing-time": {
+		"type": "carousel",
+		 "src": "/src/php-modules/carousel-pages/killing-time.php"
+	},
+
+	"local-attractions": {
+		"type": "static",
+		 "src": "/src/php-modules/carousel-pages/local-attractions.php"
+	},
+
+	"teaching-kids-how-to-save": {
+		"type": "static",
+		 "src": "/src/php-modules/carousel-pages/teaching-kids-how-to-save.php"
+	}
+}

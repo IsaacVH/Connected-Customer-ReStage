@@ -1,0 +1,16 @@
+{
+	"title_box" : {
+		"render" : "title_box.php",
+		"css"		 : ["title_box.css"],
+		"js"		 : [],
+		"args"	 : ["title"]
+	},
+
+	"block_menu" : {
+		"render" : "block_menu.php",
+		"css"		 : ["carousel.css", "block_menu.css"],
+		"js"		 : ["libs/iscroll.js", "carousel.js"],
+		"args"	 : ["menu-file", "blocks-per-page"]
+	}
+}
+
