@@ -3,11 +3,12 @@
 	<head>
 		<title>Connected Customer • {{ $data['title'] }}</title>
 		{{ HTML::style('css/global.css') }}
+		{{ HTML::style('font/font-awesome-4.1.0/css/font-awesome.min.css') }}
 	</head>
 	<body>
 		{{ $data['header'] }}
 
-		<div class="container">
+		<div id="content">
 			@yield('content')
 		</div>
 

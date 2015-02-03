@@ -11,41 +11,119 @@
 |
 */
 
+// This will bring up the homepage.
 Route::get('/', function()
 {
 	$data['title'] = 'Home';
 	$data['header'] = View::make('templates/header');
 	$data['footer'] = View::make('templates/footer');
-	return View::make('_main')->with('data', $data);
+	return View::make('pages/_main')->with('data', $data);
 });
 
+
+// Route for 529-savings.
 Route::get('529-savings', function()
 {
-	return View::make('529-savings');
+	$data['title'] = '529 Savings';
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/529-savings')->with('data', $data);
 });
 
+
+// Route for banking-101.
 Route::get('banking-101', function()
 {
-	return View::make('banking-101');
+	$data['title'] = "Banking 101";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/banking-101')->with('data', $data);
 });
 
+
+// Route for creating a portfolio.
 Route::get('creating-a-portfolio', function()
 {
-	return View::make('creating-a-portfolio');
+	$data['title'] = "Creating a Portfolio";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/creating-a-portfolio')->with('data', $data);
 });
 
-Route::get('interesting-facts', function() 
+
+// Route for games page.
+Route::get('games', function() 
 {
-	return View::make('interesting-facts');
+	$data['title'] = "Games";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/games')->with('data', $data);
 });
 
-Route::get('tic-tac-toe', function()
+// Route for interesting facts in games.
+Route::get('games/interesting-facts', function() 
 {
-	return View::make('tic-tac-toe');
+	$data['title'] = "Interesting Facts";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/interesting-facts')->with('data', $data);
 });
 
-Route::get('jokes', function()
+
+// Route for joke telling in games.
+Route::get('games/jokes', function()
 {
-	return View::make('jokes');
+	$data['title'] = "Read a Few Jokes";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/jokes')->with('data', $data);
+});
+
+
+// Route for killing time.
+Route::get('killing-time', function()
+{
+	$data['title'] = "Killing Time";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/killing-time')->with('data', $data);
+});
+
+
+// Route for Local Attractions
+Route::get('local-attractions', function()
+{
+	$data['title'] = "Local Attractions";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/local-attractions')->with('data', $data);
+});
+
+
+// Route for Sending Mail
+Route::get('send-mail', function()
+{
+	$data['title'] = "Send Some Mail";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/send-mail')->with('data', $data);
+});
+
+// Route for Teaching Children
+Route::get('teaching-children', function()
+{
+	$data['title'] = "Teaching Children How to Save";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/teaching-children')->with('data', $data);
+});
+
+// Route for tic-tac-toe in games.
+Route::get('games/tic-tac-toe', function()
+{
+	$data['title'] = "Tic Tac Toe";
+	$data['header'] = View::make('templates/header');
+	$data['footer'] = View::make('templates/footer');
+	return View::make('pages/tic-tac-toe')->with('data', $data);
 });
 
