@@ -1,24 +1,21 @@
 <style>
-	.carousel-module {
-		width: 100%;
-		height: 520px;
-		overflow: hidden;
-		z-index: -2;
-	}
-
-	.carousel-module .wrapper {
-		width: 500%;
-	}
+	.carousel-module { width: 100%; overflow: hidden; z-index: -2; }
+	.carousel-module .carousel-wrapper { width: 500%; }
+	.carousel-module .carousel-wrapper .carousel-page { width: 20%; }
 </style>
 
 <div class="carousel-module">
 	<div class="carousel-wrapper">
-		<div class="carousel-page">
-			<ul style="list-style-type: none; padding: 0; ">
-				@for($i = 0; $i < 10; $i++) <li style="width: 200px; height: 100px; background-color: white; margin: 10px; float: left;"></li> @endfor
-			</ul>
-		</div>
-		Carousel Module
-		{{ $some }}
+		@for($i=0; $i<2; $i++)
+			<div class="carousel-page">
+				<ul style="list-style-type: none; padding: 0; ">
+					@for($j = 0; $j < 6; $j++) 
+						<li style="width: 500px; height: 300px; background-color: white; margin: 30px 10px; float: left;"></li> 
+					@endfor
+				</ul>
+			</div>
+			Carousel Module
+			{{ $some }}
+		@endfor
 	</div>
 </div>

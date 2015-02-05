@@ -54,20 +54,22 @@ function drawer_menu() {
 		$(".nav-dropdown").animate({width: "0px"}, 200, function(){ $(".nav-dropdown").css("display", "none"); });
 		$("#menu-button .white-line").css("background-color", "#e02826");
 		$(".menu").removeClass("show");
-		$("#coverall").css("display", "none");
+		$("#coverall").removeClass("show");
 	} else {
 		$(".nav-dropdown").css("display", "block");
 		$(".nav-dropdown").animate({width: "230px"}, 200);
-		$(".menu").addClass("show");
 		$("#menu-button .white-line").css("background-color", "white");
-		$("#coverall").css("display", "block");
+		$(".menu").addClass("show");
+		$("#coverall").addClass("show");
 	}
 }
 
+// Execute when back button clicked.
 function back_button() {
 	alert("go back");
 }
 
+// Execute when 'Home' button is clicked.
 function home_button() {
 	alert("go home");
 }
