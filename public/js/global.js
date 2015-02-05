@@ -50,14 +50,15 @@ function set_clock() {
 
 // The function for the menu button in the header.
 function drawer_menu() {
-	if($(".nav-dropdown").css("display") == "block"){
-		$(".nav-dropdown").animate({width: "0px"}, 200, function(){ $(".nav-dropdown").css("display", "none"); });
+	if($(".menu").hasClass("show")){
+	// if($(".nav-dropdown").css("display") == "block"){
+		// $(".nav-dropdown").animate({width: "0px"}, 200, function(){ $(".nav-dropdown").css("display", "none"); });
 		$("#menu-button .white-line").css("background-color", "#e02826");
 		$(".menu").removeClass("show");
 		$("#coverall").removeClass("show");
 	} else {
-		$(".nav-dropdown").css("display", "block");
-		$(".nav-dropdown").animate({width: "230px"}, 200);
+		// $(".nav-dropdown").css("display", "block");
+		// $(".nav-dropdown").animate({width: "230px"}, 200);
 		$("#menu-button .white-line").css("background-color", "white");
 		$(".menu").addClass("show");
 		$("#coverall").addClass("show");

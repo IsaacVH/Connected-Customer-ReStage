@@ -1,8 +1,8 @@
 <footer id="footer">
 	<div class="menu-bar">
 		<div class="menu-bar-wrapper">
-			<a href="#" onclick="backClicked()"><div class="edge-button"><div>< BACK</div></div></a>
-			<a href="#" onclick="enter()"><div class="edge-button"><div><i class="fa fa-university"></i></div></div></a>
+			<!-- <a href="#" onclick="backClicked()"><div class="edge-button"><div>< BACK</div></div></a> -->
+			<!-- <a href="#" onclick="enter()"><div class="edge-button"><div><i class="fa fa-university"></i></div></div></a> -->
 			
 			<!--
 			<div class="menu-button" onclick="menu_button()">

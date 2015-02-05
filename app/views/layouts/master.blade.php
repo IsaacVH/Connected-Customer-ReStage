@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Connected Customer • {{ $data['title'] }}</title>
-		{{ HTML::style('css/global.css', array(), true) }}
-		{{ HTML::style('font/font-awesome-4.1.0/css/font-awesome.min.css', array(), true) }}
+		<link rel='stylesheet' href='css/global.css'>
+		<link rel='stylesheet' href='font/font-awesome-4.1.0/css/font-awesome.min.css'>
 	</head>
 	<body>
 		{{ $data['header'] }}
@@ -15,7 +15,7 @@
 		{{ $data['footer'] }}
 
 		{{ HTML::script('https://code.jquery.com/jquery-2.1.3.min.js') }}
-		{{ HTML::script('js/global.js', array(), true) }}
+		<script src='js/global.js'></script>
 	</body>
 </html>
 

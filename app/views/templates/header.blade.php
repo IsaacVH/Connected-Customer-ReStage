@@ -1,5 +1,4 @@
 <header id="header">
-	<a href="#" id="back-button"><div class="b-button"><i class="fa fa-arrow-left"></i></div></a>
 	<div id="clock">
 		<span class="date"></span>
 		<span class="time">
@@ -8,8 +7,10 @@
 		</span>
 		<span class="dayofweek"></span>
 	</div>
-	<a id="home-button" href="/"><div class="h-button"><i class="fa fa-university"></i></div></a>
 </header>
+
+<a id="back-link" href="#"><div id="back-button" class="icon-button"><i class="fa fa-arrow-left"></i></div></a>
+<a id="home-link" href="/"><div id="home-button" class="icon-button"><i class="fa fa-university"></i></div></a>
 
 <div id="menu-button">
 	<span class="white-line-container">
