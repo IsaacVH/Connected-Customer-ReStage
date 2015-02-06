@@ -15,6 +15,7 @@
 		{{ $data['footer'] }}
 
 		{{ HTML::script('https://code.jquery.com/jquery-2.1.3.min.js') }}
+		<script src='js/iscroll.js'></script>
 		<script src='js/global.js'></script>
 	</body>
 </html>

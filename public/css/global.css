@@ -2,7 +2,7 @@
 
 * { font-family: 'Roboto Slab', sans-serif, Helvetica, Arial; }
 html { margin: 0; height: 100%; }
-body { margin: 0; height: 100%; }
+body { margin: 0; height: 100%; overflow: hidden; }
 
 /* +HEADER */
 a { text-decoration: none; } /* This is the header element, all things near the top should be contained here */
@@ -83,7 +83,11 @@ footer { position: absolute; bottom: 0; width: 100%; box-shadow: 0px 1px 6px bla
 
 	header #clock .date { left: 10%; }
 	header #clock .dayofweek { right: 10%; }
+
+
+	.carousel-module .carousel-page > ul > li { width: calc(50% - 60px); }
 }
+
 
 @media screen and (orientation:landscape) {
 	#content { background-image: url("../images/fractal-background-landscape.png"); }
@@ -91,5 +95,8 @@ footer { position: absolute; bottom: 0; width: 100%; box-shadow: 0px 1px 6px bla
 	.menu { left: -240px; bottom: auto; top: 0; height: 100%; width: 240px; -webkit-transition: left 0.3s ease-out; -moz-transition: left 0.3s ease-out; transition: left 0.3s ease-out;}
 	.menu.show { left: 0; box-shadow: -3px 0 8px black; }
 	.menu .nav-dropdown { width: 240px; margin-top: 100px; }
+
+
+	.carousel-module .carousel-page > ul > li { width: calc(33.3333% - 60px); }
 }
 

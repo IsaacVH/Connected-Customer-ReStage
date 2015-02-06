@@ -1,4 +1,4 @@
-// Here's the global default function
+// Here's the global 'onload' function
 $(function() { 
 	set_clock();
 	setInterval(function(){ set_clock(); }, 1000);
@@ -9,7 +9,39 @@ $(function() {
 });
 
 
-// This function controls the clock in the header.
+//******************Scrolling for carousel*********************
+var myScroll;
+function loaded() {
+
+	if($(".carousel-module").length > 0){
+
+		var pages = document.getElementsByClassName('carousel-page');
+		$(".carousel-module #scroller").css("width", (pages.length * 100) + "%");
+		$(".carousel-module .carousel-page").css("width", (100/pages.length) + "%");
+		
+		for(var i = 1; i < pages.length+1; i++){
+			var navitem = document.createElement("li");
+			navitem.innerHTML = i.toString();
+			if(i == 1){ navitem.className = "active"; }
+			document.getElementById('indicator').appendChild(navitem);
+		}
+
+		myScroll = new iScroll('wrapper', {
+			snap: true,
+			momentum: false,
+			hScrollbar: false,
+			onScrollEnd: function () {
+				document.querySelector('#indicator > li.active').className = '';
+				document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+			}
+		});
+	}
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+//**************************************************************
+
+
+//**************Function for Header Clock***********************
 function set_clock() {
 	var currentTime = new Date();
 
@@ -47,6 +79,8 @@ function set_clock() {
 	}
 	$(".dayofweek").text(day);
 }
+//*************************************************************
+
 
 // The function for the menu button in the header.
 function drawer_menu() {
